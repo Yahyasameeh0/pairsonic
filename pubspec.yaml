@@ -14,7 +14,7 @@ dependencies:
   # Localization / i18n
   flutter_localizations:
     sdk: flutter
-intl: ^0.20.3
+  intl: ^0.20.3
 
   # App structure in general
   get_it: ^7.2.0
@@ -48,8 +48,8 @@ intl: ^0.20.3
   # PairSonic group pairing (audio)
   ggwave_flutter:
     git: 
-     url: https://github.com/fput/ggwave_flutter.git
-     ref: cdf3736fe3b38959350e3a452a07f0cf6f375a8b
+      url: https://github.com/fput/ggwave_flutter.git
+      ref: cdf3736fe3b38959350e3a452a07f0cf6f375a8b
   flutter_sound: ^9.2.13
   volume_control: ^0.1.5
   convert: ^3.1.1
@@ -67,7 +67,7 @@ flutter:
   assets:
     - assets/
     - assets/profileImages/
-    - assets/grouppairing/  
+    - assets/grouppairing/
   generate: true
 
 flutter_intl:
