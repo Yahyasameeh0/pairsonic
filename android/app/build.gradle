@@ -22,7 +22,7 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-def dartEnvironmentVariables = []
+def dartEnvironmentVariables = [:]
 if (project.hasProperty('dart-defines')) {
     dartEnvironmentVariables = project.property('dart-defines')
             .split(',')
@@ -48,13 +48,8 @@ if (keystorePropertiesFile.exists()) {
     println "No key properties defined"
 }
 
-//android {
-//    ...
-//}
-
-
 android {
-    compileSdkVersion 34
+    compileSdk 34
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -62,8 +57,8 @@ android {
 
     defaultConfig {
         applicationId "de.seemoo.pairsonic"
-        minSdkVersion 23 //was 16
-        targetSdkVersion 34
+        minSdk 23
+        targetSdk 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
@@ -77,6 +72,7 @@ android {
             storePassword keystoreProperties['storePassword']
         }
     }
+
     buildTypes {
         release {
             signingConfig signingConfigs.release
@@ -89,7 +85,7 @@ flutter {
 }
 
 dependencies {
-    implementation 'com.android.support:multidex:2.0.1' //enter the latest multidex version
-    implementation 'androidx.work:work-runtime-ktx:2.8.0-alpha03'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.work:work-runtime-ktx:2.9.0'
     implementation 'com.google.android.material:material:1.12.0'
 }
