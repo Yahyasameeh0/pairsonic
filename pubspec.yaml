@@ -18,7 +18,7 @@ dependencies:
 
   # App structure in general
   get_it: ^7.7.0
-  logger: ^2.4.0
+  logger: ^1.4.0
   shared_preferences: ^2.3.2
   permission_handler: ^11.3.1
   device_info_plus: ^10.1.2
@@ -66,6 +66,7 @@ dependency_overrides:
   win32: ^5.5.4
   intl: ^0.20.3
   flutter_sound: 9.2.13
+  logger: ^1.4.0
 
 flutter:
   uses-material-design: true
