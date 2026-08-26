@@ -50,7 +50,7 @@ dependencies:
     git: 
       url: https://github.com/fput/ggwave_flutter.git
       ref: cdf3736fe3b38959350e3a452a07f0cf6f375a8b
-  flutter_sound: ^9.14.0
+  flutter_sound: 9.2.13
   volume_control: ^0.1.5
   convert: ^3.1.1
 
@@ -65,6 +65,7 @@ dev_dependencies:
 dependency_overrides:
   win32: ^5.5.4
   intl: ^0.20.3
+  flutter_sound: 9.2.13
 
 flutter:
   uses-material-design: true
