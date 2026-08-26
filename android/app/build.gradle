@@ -49,6 +49,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
+    namespace "de.seemoo.pairsonic"
     compileSdk 34
 
     sourceSets {
