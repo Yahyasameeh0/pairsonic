@@ -79,7 +79,7 @@ class GgwaveAudioChannelService extends AudioChannelService<Uint8List> {
   }
 
   @override
-  Future<void> stopTransmission() async{
+  Future<void> stopTransmission() async {
     // This implementation does nothing, since transmission is not continuous.
   }
 
