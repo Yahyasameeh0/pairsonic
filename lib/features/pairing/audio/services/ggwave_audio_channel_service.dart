@@ -18,7 +18,7 @@ class GgwaveAudioChannelService extends AudioChannelService<Uint8List> {
   final FlutterSoundPlayer _mPlayer = FlutterSoundPlayer(logLevel: Level.info);
   final FlutterSoundRecorder _mRecorder =
       FlutterSoundRecorder(logLevel: Level.info);
-  final _controller = StreamController<FoodData>();
+  final _controller = StreamController<Uint8List>();
   Timer? _processingTimer;
   final Duration _processingInterval = const Duration(milliseconds: 500);
   StreamSubscription? _streamSubscription;
@@ -38,10 +38,8 @@ class GgwaveAudioChannelService extends AudioChannelService<Uint8List> {
 
   GgwaveAudioChannelService._internal()
       : super(profile: AudioChannelProfile.audible) {
-    _streamSubscription = _controller.stream.listen((foodData) {
-      if (foodData.data != null) {
-        _receivedAudioData.add(foodData.data!);
-      }
+    _streamSubscription = _controller.stream.listen((data) {
+      _receivedAudioData.add(data);
     });
     ggwave.init();
   }
