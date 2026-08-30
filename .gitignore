@@ -1,4 +1,44 @@
 ```
+# Build artifacts
+build/
+dist/
+*.apk
+*.aab
+*.so
+*.aar
+
 # Dependencies
-/pubspec.lock
+node_modules/
+vendor/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dart/Flutter
+.dart_tool/
+.packages
+.pub/
+build/
+*.g.dart
+*.freezed.dart
+
+# Gradle
+.gradle/
+!android/.gradle/
+*.gradle
 ```
