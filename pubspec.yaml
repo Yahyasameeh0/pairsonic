@@ -48,12 +48,10 @@ dependencies:
   # PairSonic group pairing (audio)
   ggwave_flutter:
     git: 
-      url: https://github.com/fput/ggwave_flutter.git
-      ref: cdf3736fe3b38959350e3a452a07f0cf6f375a8b
-  flutter_sound: ^9.30.0
-  volume_control:
-    git:
-      url: https://github.com/g-m-f/volume_control.git
+     url: https://github.com/fput/ggwave_flutter.git
+     ref: cdf3736fe3b38959350e3a452a07f0cf6f375a8b
+  flutter_sound: ^9.2.13
+  volume_controller: ^2.0.7
   convert: ^3.1.1
 
 dev_dependencies:
